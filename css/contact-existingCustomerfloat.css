@@ -1,0 +1,243 @@
+/*Mid-Content*/
+
+.mid-Content{
+  width: 428px;
+  height: 766px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F7F8;
+}
+
+.p{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(42, 54, 71, 1);
+  margin: 0px;
+}
+
+h2{
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 56.4px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0px;
+}
+
+.blue-line{
+  height: 0px;
+  gap: 0px;
+  border: 3px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid rgba(41, 171, 226, 1);
+  width: 80px;
+}
+
+/*float-Content*/
+.float-Ctn {
+  width: 330px;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-right: 60px;
+  
+}
+
+.float-Ctn.visible {
+  display: block;
+  animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.float-top-Ctn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+}
+
+.edit-delete-Ctn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.edit-delete2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.edit-delete2:hover{
+  color: rgba(41, 171, 226, 1);
+  font-weight: 700;
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(90%) saturate(3325%) hue-rotate(170deg) brightness(90%) contrast(91%);
+  
+}
+
+.edit-delete2 p{
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+}
+
+h3{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  margin: 0px;
+  text-wrap: nowrap;
+  margin-left: 20px;
+}
+
+.float-Edit-Delet-Ctn {
+  display: flex;
+  align-items: center;
+}
+
+.small-img{
+  width: 24px;
+  height: 24px;
+}
+
+.float-img img{
+  width: 80px;
+  height: 80px;
+}
+
+.contact-Information{
+  width: 330px;
+  height: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 10px;
+  }
+
+  .contact-Information2{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .font-p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+  }
+
+.font-weight{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.Contactsclass1{
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  gap: 130px;
+  margin-left: 10px;
+}
+
+.Contactsclass2{
+  width: 213px;
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 10px;
+    margin-top: 20px;
+}
+
+.Contactsclass3{
+  width: 32px;
+  height: 32px;
+  margin-top: 25px;
+}
+
+.back-svg img{
+  width: 24.6px;
+  height: 23.92px;
+}
+/* Menu Dot */
+
+.MenuDot{
+ margin-top: 240px;
+ margin-left: 350px;
+}
+
+.optionMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 890px;
+  margin-left: 280px;
+  width: 116px;
+  height: 100px;
+  border-radius: 20px 20px 0px 20px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background: #FFFFFF;
+  font-size: 20px;
+  line-height: 19.2px;
+  color: #2A3647;
+  font-weight: 400;
+  
+}
+
+.optionMenu p{
+  margin: 0px;
+  margin-left: 15px;
+}
+
+.optionMenu2,
+.optionMenu3{
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.optionMenu2:hover,
+.optionMenu3:hover{
+  cursor: pointer;
+}
+
+.optionMenu2:active,
+.optionMenu3:active{
+  background-color: rgb(212, 212, 212);
+  color:rgba(41, 171, 226, 1);
+  padding: 2px 2px 2px 2px ;
+}
+
+.optionMenu2 img,
+.optionMenu3 img{
+  width: 24px;
+  height: 24px;
+ 
+}
+
+
+
+
+

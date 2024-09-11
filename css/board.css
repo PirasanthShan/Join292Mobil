@@ -1,0 +1,472 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter";
+  padding: 0;
+  margin: 0;
+  background-color: rgb(246, 247, 248);
+}
+
+.headline {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 300px;
+}
+
+.headline-left > h1 {
+  font-size: 61px;
+  font-weight: 700;
+}
+
+.headline-right {
+  width: 504px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchbar {
+  width: 312px;
+  height: 48px;
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#searchbar input {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  border: 1px solid rgba(168, 168, 168, 1);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 50px 10px 10px; /* Adjust the padding to make space for the line and icon */
+}
+
+#searchbar input:focus {
+  border: 1px solid rgba(41, 171, 226, 1);
+  outline: none;
+}
+
+#searchbar input::placeholder {
+  color: rgba(209, 209, 209, 1);
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  right: 50px; /* Position it before the magnifying glass */
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%; /* Adjust height as needed */
+  background-color: rgba(209, 209, 209, 1);
+}
+
+.magnifying-glass {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Position the icon inside the input field */
+  transform: translateY(-50%);
+  width: 32px; /* Adjust the size of the icon as needed */
+  height: 32px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.magnifying-glass:hover {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.add-task-btn {
+  width: 160px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(42, 54, 71, 1);
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  font-size: 21px;
+  font-weight: 700;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.add-task-btn:hover {
+  background-color: rgba(41, 171, 226, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.add-task-btn:active {
+  position: relative;
+}
+
+.tasks {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 300px;
+}
+
+.to-do-split,
+.in-progress-split,
+.await-feedback-split,
+.done-split {
+  width: 244px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.to-do-headline,
+.in-progress-headline,
+.await-feedback-headline,
+.done-headline.done-headline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.to-do-headline > span,
+.in-progress-headline > span,
+.await-feedback-headline > span,
+.done-headline > span {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(66, 82, 110, 1);
+}
+
+.task-plus:hover {
+  cursor: pointer;
+}
+
+#card {
+  width: 252px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 24px;
+  padding: 16px;
+  gap: 10px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
+}
+
+#card:hover {
+  cursor: pointer;
+}
+
+.catagory {
+  width: 113px;
+  height: 27px;
+  border-radius: 8px;
+  background-color: rgba(0, 56, 255, 1);
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  padding: 4px 16px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(42, 54, 71, 1);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(168, 168, 168, 1);
+}
+
+.subtasks {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15%;
+}
+
+.subtasks-diagram {
+  width: 128px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: rgba(244, 244, 244, 1);
+  margin-right: 10px;
+}
+
+.subtasks-diagram-filled {
+  width: 50%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgba(69, 137, 255, 1);
+}
+
+.subtasks-number {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.bottom-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.assigned-to {
+  display: flex;
+}
+
+.person-one,
+.person-two,
+.person-three {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  background-color: rgba(255, 122, 0);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.person-two {
+  position: relative;
+  background-color: rgba(33, 215, 193);
+  z-index: 2;
+  right: 6px;
+}
+
+.person-three {
+  position: relative;
+  background-color: rgba(70, 47, 138);
+  z-index: 3;
+  right: 13px;
+}
+
+#card-detail-view {
+  width: 525px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 30px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+  margin-left: calc(50vw - 262px);
+  top: calc(50vh - 480px);
+  position: fixed;
+  z-index: 9999;
+  padding: 48px 40px;
+  transition: all 300ms ease-in-out;
+}
+
+.active-card {
+  transform: translateX(100vw);
+}
+
+.card-detail-view-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-detail-view-headline > img:hover {
+  cursor: pointer;
+  background-color: rgba(209, 209, 209, 1);
+  border-radius: 50%;
+}
+
+.card-detail-view-catagory {
+  width: 164px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: rgba(0, 56, 255, 1);
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 23px;
+  font-weight: 400;
+  padding: 4px 24px;
+}
+
+.card-detail-view-title {
+  font-size: 61px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+}
+
+.card-detail-view-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  display: flex;
+}
+
+.card-detail-view-date {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-detail-view-date-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(42, 54, 71, 1);
+}
+
+.card-detail-view-date-due-date {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 30px;
+}
+
+.card-detail-view-priority {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-detail-view-priority-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(42, 54, 71, 1);
+}
+
+.card-detail-view-priority-urgency {
+  display: flex;
+  align-items: center;
+  margin-left: 53px;
+}
+
+.card-detail-view-priority-urgency > span {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.card-detail-view-assigned-to > span {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(42, 54, 71, 1);
+}
+
+.card-detail-view-assigned-to-person-one,
+.card-detail-view-assigned-to-person-two,
+.card-detail-view-assigned-to-person-three {
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+  margin-top: 20px;
+}
+
+.card-detail-view-assigned-to-person-one-logo,
+.card-detail-view-assigned-to-person-two-logo,
+.card-detail-view-assigned-to-person-three-logo {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  background-color: rgba(255, 122, 0);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  margin-right: 20px;
+}
+
+.card-detail-view-assigned-to-person-two-logo {
+  background-color: rgba(33, 215, 193);
+}
+
+.card-detail-view-assigned-to-person-three-logo {
+  background-color: rgba(70, 47, 138);
+}
+
+.card-detail-view-subtasks {
+  margin-top: 20px;
+}
+
+.card-detail-view-subtasks > span {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(42, 54, 71, 1);
+}
+
+.card-detail-view-subtasks-enumeration {
+  margin-top: 20px;
+}
+
+.card-detail-view-subtasks-enumeration-one,
+.card-detail-view-subtasks-enumeration-two {
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+}
+
+.card-detail-view-subtasks-enumeration-one:hover,
+.card-detail-view-subtasks-enumeration-two:hover {
+  background-color: rgba(209, 209, 209, 1);
+  border-radius: 10px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.card-detail-view-subtasks-enumeration-one > img,
+.card-detail-view-subtasks-enumeration-two > img {
+  margin-right: 20px;
+}
+
+.card-detail-view-subtasks-enumeration-one > span,
+.card-detail-view-subtasks-enumeration-two > span {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.options-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.options {
+  width: 159px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.delete,
+.edit {
+  display: flex;
+  align-items: center;
+}
+
+.delete:hover,
+.edit:hover {
+  cursor: pointer;
+}
+
+.delete > span,
+.edit > span {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(42, 54, 71, 1);
+  margin-left: 7px;
+}
+
+.options-line {
+  width: 1px;
+  height: 24px;
+  background-color: rgba(209, 209, 209, 1);
+}

@@ -1,0 +1,538 @@
+ body,html{
+  margin: 0px;
+  padding: 0px;
+  background-color: #F6F7F8;
+  font-family: Inter;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center; /* Erlaubt flex die volle Höhe zu nutzen */
+  background-color: black;
+}
+
+/* Logo/Sign Up (Button, Text)*/
+.signUp-Ctn{
+display: flex;
+align-items: center;
+width: 300px;
+height: 50px;
+margin-top: 230px;
+gap: 35px;
+opacity: 0px;
+}
+
+.signUp-Ctn span{
+  display: flex;
+ font-size: 20px;
+ font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: 
+rgba(0, 0, 0, 1)
+}
+
+.signUp-button{
+  background-color: #2A3647;
+  border-radius: 8px;
+  border: 0px;
+  height: 49px;
+  padding: 15px 16px 15px 16px;
+  gap: 10px;
+  border-radius: 8px; 
+  color: #FFFFFF;
+  font-size: 16px;
+  }
+
+ .signUp-button:active{
+   transition:  0.1s ease-in-out;
+   background-color: 
+   rgba(41, 171, 226, 1);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Logo/Sign Up (Button, Text)*/
+ .form-Ctn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 396px;
+  height: 515px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  .LogIn-Ctn{
+    width: 315px;
+    height: 73px;
+    text-align: center;
+    gap: 16px;
+  }
+
+  h1{
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 56.4px;
+    text-align: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    }
+
+  .underline-Ctn{
+    border: 2px solid rgba(41, 171, 226, 1);
+    margin-right: 110px;
+    margin-left: 110px;
+  }
+ /* Input-Field*/
+  .CtnInput{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    height: 192px;
+    opacity: 0px;
+   }
+
+  .input-Ctn{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid rgba(209, 209, 209, 1);
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center; 
+    gap: 26px;
+  }
+
+   .input-Ctn img{
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+  }
+
+  .input-Ctn:active{
+    border-color: 
+    rgba(41, 171, 226, 1);
+    cursor: pointer;
+  }
+  
+  .input{
+    width: 322px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    margin-left: 15px;
+  }
+
+  .input:hover
+  .remember-Ctn img{
+    cursor: pointer;
+  }
+
+  ::placeholder{
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
+      color: rgba(209, 209, 209, 1);
+      padding: 12px 12px;
+    }
+
+ .form{
+  width: 364px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+ }
+
+ .remember-Ctn{
+   display: flex;
+   margin-right: 180px;
+   gap: 5px;
+ }
+
+ .remember-Ctn p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+/* Button sign In/ Guest Log In*/
+.signupBtnCtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.logBtn{
+  width: 180px;
+  height: 51px;
+  border-radius: 8px;
+  background-color: rgba(42, 54, 71, 1);
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.logBtn:active,
+.SignUpButton:active{
+  transition:  0.1s ease-in-out;
+   background-color: 
+   rgba(41, 171, 226, 1);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   cursor: pointer;
+}
+
+.guestBtn{
+  width: 180px;
+  height: 51px;
+  border-radius: 8px;
+  border: 1px solid rgba(42, 54, 71, 1);
+  color: rgba(42, 54, 71, 1);
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 700;
+ 
+}
+
+.guestBtn:active{
+  border-color: rgba(41, 171, 226, 1);
+  color: rgba(41, 171, 226, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  cursor: pointer;
+}
+
+.footer {
+  gap: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer2{
+  gap: 20px;
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.footer2 a{
+  margin: 0px;
+  color: rgba(168, 168, 168, 1);
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer a{
+  margin: 0px;
+  color: rgba(168, 168, 168, 1);
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.d-none{
+  display: none;
+}
+/* Registration(Open with sign Up)*/
+.registration-Ctn{
+  display: flex;
+  flex-direction: column;
+  width: 396px;
+  height: 595px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+  
+}
+
+.regiCtn{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.h2Ctn{
+  width: 315px;
+  height: 89px;
+  margin-left: 20px;
+}
+
+.regiCtn h2{
+  font-size: 47px;
+  line-height: 56.4px;
+  font-weight: 700;
+  margin: 0px;
+ 
+}
+
+.regiCtn img{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 40px;
+  margin-right: 25px;
+  margin-left: 40px;
+}
+
+.underline-Ctn2{
+  border: 2px solid rgba(41, 171, 226, 1);
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: -20px;
+}
+
+.CtnInput2{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+ }
+
+.formRegi{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.remember-Ctn2{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.remember-Ctn2 em{
+  color: #29ABE2;
+}
+
+.remember-Ctn2 p{
+  color: rgba(168, 168, 168, 1);
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+}
+
+.remember-Ctn2 a{
+  text-decoration: none;
+  color: rgba(41, 171, 226, 1);
+  font-weight: 400;
+}
+
+.remember-Ctn2 a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.SignUpButton{
+  width: 180px;
+  height: 51px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(42, 54, 71, 1);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.SignUpButton-Ctn{
+  display: flex;
+  justify-content: center;
+}
+
+/* Keyframe-Animation für das Hochgleiten */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100vh); /* Startet von ganz unten am Bildschirmrand */
+    opacity: 0; /* Vollständig transparent */
+  }
+  100% {
+    transform: translateY(0); /* Endet in der Mitte */
+    opacity: 1; /* Vollständig sichtbar */
+  }
+}
+
+/* Container für die Alerts */
+.singUp-Alert,
+.singUp-Alert2{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(29, 29, 29, 0.267);
+  display: none; /* Standardmäßig ausgeblendet */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Stellt sicher, dass der Alert über anderen Inhalten angezeigt wird */
+}
+
+/* Gemeinsame Stile für alle Alerts */
+.AlertSignUp, 
+.Emailexists,
+.Nameexists,
+.FailedtoSingUp,
+.PrivacyPolicy,
+.EmailandPassword,
+.UserDontExist{
+  width: 200px;
+  height: 74px;
+  border-radius: 20px;
+  padding: 0px 25px 0px 25px;
+  background-color: #2A3647;
+  box-shadow: 0px 0px 4px 0px #00000026;
+  display: none; /* Standardmäßig ausgeblendet */
+  align-items: center;
+  justify-content: center;
+  animation: slideUp 0.2s forwards; /* Animation hinzufügen */
+}
+
+/* Gemeinsame Stile für den Text in den Alerts */
+.AlertSignUp p,
+.Emailexists p,
+.Nameexists p,
+.FailedtoSingUp p,
+.PrivacyPolicy p,
+.EmailandPassword p,
+.UserDontExist p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+}
+/* Container for the content */
+.content {
+  width: 428px;
+  height: 926px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+/* Keyframes for logo movement */
+@keyframes logoMove {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    width: 200px; /* Start with a larger size */
+    height: 243.94px; /* Adjust height proportionally */
+  }
+  100% {
+    transform: translate(-190px, -410px) scale(0.32); /* Calculated to move to 20px left and 37px top */
+    width: 64px;
+    height: 78px;
+  }
+}
+
+
+/* Keyframes for background fade out */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Initial styles for the logo in loading screen */
+.loadingScreen img {
+  width: 200px; /* Start with a larger size */
+  height: 243.94px; /* Adjust height proportionally */
+  opacity: 1;
+  position: absolute; /* Ensure the logo can move */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+/* Initial styles for the loading screen */
+.loadingScreen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #2A3647;
+  width: 428px;
+  height: 926px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the loading screen is on top */
+}
+
+.logo-move {
+  animation: logoMove 1s forwards; /* Adjust the animation duration for smoothness */
+}
+
+/* Final logo styles */
+.logo-Ctn img {
+  width: 64px;
+  height: 78.03px;
+  opacity: 0; /* Start hidden */
+}
+
+.logo-Ctn {
+  width: 64px;
+  height: 78px;
+  position: absolute;
+  top: 37px;
+  margin-left: 20px;
+}
+
+/* Container style */
+.top-Ctn {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keyframe-Animationen für den Übergang */
+.fade-in {
+  animation: fadeInAnimation 0.3s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOutAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOutAnimation {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.hidden {
+  visibility: hidden;
+}

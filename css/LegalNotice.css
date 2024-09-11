@@ -1,0 +1,78 @@
+body{
+  font-family: "Inter";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+
+.containerLegalNotice{
+  width: 428px;
+  height: 766px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  background: #F6F7F8;
+}
+
+
+.header-LegalNotice{
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+}
+
+.header-LegalNotice img{
+  width: 18.45px;
+  height: 17.94px;
+  padding: 5px;
+}
+
+.header-privacy a{
+  width: 32px;
+  height: 32px;
+ }
+
+
+h1{
+  width: 323px;
+  height: 56px;
+  font-size: 47px;
+  line-height: 56.4px;
+  font-weight: 700;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.imprint{
+  font-size: 27px;
+  left: 19.2px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.text-LegalNotice{
+  width: 396px;
+  }
+
+p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+h2{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  width: 346px;
+  margin: 0px;
+}
+

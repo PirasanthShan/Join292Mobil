@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/contact.js" defer></script>
+  <script src="./js/include.js" defer></script>
+  <link rel="stylesheet" href="./css/template.css">
+  <link rel="icon" type="image/gif" href="./assets/icon/JoinMainLogo.webp">
+  <link rel="stylesheet" href="./css/contactList.css">
+  <link rel="stylesheet" href="./css/contact-newContactfloat.css">
+  <link rel="stylesheet" href="./css/contact-existingCustomerfloat.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Join</title>
+</head>
+
+<body onload="includeHTML()">
+  <!--Header-->
+  <div w3-include-html="templateHeader.html"></div>
+  
+  <!--Add Contact Float-->
+  <div id="FullSize"></div> <!-- Überprüfe, ob dieses Element notwendig ist -->
+
+  <!--Scroll-Contacts-Content-->
+  <div class="Content-Contacts">
+    <div class="innerContent">
+      <!--Contact-List-->
+      <div class="AtoZ-Content" id="contact-list">
+        <!-- Dynamischer Inhalt wird hier eingefügt -->
+      </div>
+
+      <!-- Button -->
+      <button id="addContactBtn" class="contactBtn">
+        <img src="./assets/icon/person_add.svg" alt="Add Contact">
+      </button>
+    </div>
+  </div>
+
+  <!--Mid Content-->
+  <div class="mid-Content" style="display: none;">
+    <div class="Contactsclass1">
+      <div class="Contactsclass2">
+        <h2>Contact</h2>
+        <p class="p">Better with a team</p>
+        <div class="blue-line"></div>
+      </div>
+      <div class="Contactsclass3">
+        <a class="back-svg" href="#">
+          <img src="assets/icon/back.svg" alt="Back">
+        </a>
+      </div>
+    </div>
+
+    <div class="float-Ctn">
+      <div class="float-top-Ctn">
+        <div class="float-img">
+          <img src="" alt="Profile Image">
+        </div>
+        <div class="float-Edit-Delet-Ctn">
+          <h3>Anton Mayer</h3>
+        </div>
+      </div>
+
+      <div class="contact-Information">
+        <p>Contact Information</p>
+      </div>
+
+      <div class="contact-Information2">
+        <p class="font-p">Email</p>
+        <p class="email-blue">example@example.com</p>
+        <p class="font-p">Phone</p>
+        <p>123456789</p>
+      </div>
+    </div>
+
+    <div class="MenuDot">
+      <img src="assets/icon/threeDot.svg" alt="Menu" id="menu-icon">
+    </div>
+
+    <div class="optionMenu" id="optionMenu">
+      <div class="optionMenu2">
+        <img src="assets/icon/edit.svg" alt="Edit">
+        <p>Edit</p>
+      </div>
+      <div class="optionMenu3">
+        <img src="assets/icon/delete.svg" alt="Delete">
+        <p>Delete</p>
+      </div>
+    </div>
+  </div>
+
+  <!--navbar-->
+  <div w3-include-html="templateNavbar.html"></div>   
+  <!--navbar--> 
+
+</body>
+</html>

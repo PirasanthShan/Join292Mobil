@@ -1,0 +1,71 @@
+/* Privacy Policy */
+body {
+  font-family: "Inter";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.containerPrivacy{
+  width: 428px;
+  height: 766px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  background: #F6F7F8;
+  overflow: auto;
+  }
+
+.header-privacy {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 50px;
+}
+
+.header-privacy a{
+  width: 32px;
+  height: 32px;
+ 
+}
+
+.header-privacy img {
+  width: 18.45px;
+  height: 17.94px;
+  padding: 5px;
+}
+
+h1 {
+  width: 323px;
+  height: 56px;
+  font-size: 47px;
+  line-height: 56.4px;
+  font-weight: 700;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.text-Policy {
+  width: 396px;
+  margin-bottom: 50px;
+}
+
+.text-Policy {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+h2 {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 32.4px;
+  width: 346px;
+  height: 32px;
+  margin: 0px;
+}

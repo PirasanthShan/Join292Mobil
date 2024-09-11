@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="./js/login.js"></script>
+  <script src="./js/loginScript.js"></script>
+  <script src="./js/signupScript.js"></script>
+  <title>Join</title>
+</head>
+<body>
+<div class="content">
+  <!--Logo/Sign Up Button-->
+<div class="container">
+  <div class="top-Ctn">
+    <div class="logo-Ctn">
+    <img src="./assets/icon/JoinMainLogo.webp" alt="">
+  </div> 
+  
+
+<!--LoadingScreen-->
+ <div class="loadingScreen">
+  <img src="./assets/icon/Join logo vector.svg" alt="Loading Logo">
+ </div>
+ 
+ <!--RegisterContainer-->
+ <div id="RegisterWindow"></div>
+ 
+ <!--Sign Up Box-->
+ <div id="formId" class="form-Ctn">
+ 
+  <!--Log in-->
+  <div class="LogIn-Ctn">
+    <h1>Log in</h1>
+   <div class="underline-Ctn"></div>
+  </div>
+  
+  <div class="CtnInput">
+    <form>
+     <div class="form">
+      
+      <div class="input-Ctn">
+        <input class="input" type="email" placeholder="Email" id="login-email" required autocomplete="current-email">
+        <img src="./assets/icon/mail.webp" alt="">
+      </div>
+      <div class="input-Ctn">
+        <input class="input" type="password" placeholder="Password" id="login-password" required autocomplete="current-password" oninput="updateToggleIcon('login-password', 'login-password-toggle')">
+        <img src="./assets/icon/lock.webp" alt="" id="login-password-toggle" onclick="togglePasswordVisibility('login-password', 'login-password-toggle')">
+      </div>
+    
+    
+  
+      <div class="remember-Ctn" id="remember-image-container">
+        <img src="./assets/icon/Property 1=Default.svg" alt="" id="remember-main-image">
+        <p>Remember Me</p>
+      </div>
+    
+    
+      <div class="signupBtnCtn">
+        <button class="logBtn" id="logBtn">Log in</button>
+        <button class="guestBtn" id="guestBtn">Guest Log in</button>
+      </div>
+     
+      </div>
+    </div>
+   </form>
+
+      <div id="signUpNone" class="signUp-Ctn">
+        <div class="text-line">
+        <span>Not a Join User?</span>
+        </div>
+        <button onclick="signUp()" class="signUp-button">Sign Up</button>
+      </div>
+
+
+      
+      
+      <div class="singUp-Alert2" style="display: none;">
+        <div class="EmailandPassword" style="display: none;">
+           <p>Please enter both an email and a password.</p>
+        </div>
+        <div class="UserDontExist" style="display: none;">
+           <p>User don't Exist</p>
+        </div>
+      </div>
+
+
+
+
+<div class="footer">
+  
+  <a href="privacyPolicy.html">Privacy Policy</a>
+  <a href="LegalNotice.html">Legal Notice</a>
+  
+</div>
+ 
+</body>
+</html>

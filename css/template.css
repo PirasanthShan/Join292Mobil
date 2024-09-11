@@ -1,0 +1,120 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+  flex-direction: column;
+  display: flex;
+}
+
+header {
+  width: 428px;
+  height: 80px;
+  gap: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px #0000001A;
+  background-color: #FFFFFF;
+  position: relative;
+  }
+
+header img{
+  width: 32px;
+  height: 39.02px;
+  margin-left: 20px;
+}
+
+.headerInfo {
+  align-items: center;
+  width: 104px;
+  height: 56px;
+  gap: 16px;
+  display: flex;
+}
+
+.helpBtn {
+  width: 32px;
+  height: 32px;
+}
+
+.helpBtn:hover {
+  transform: scale(1.2);
+}
+
+.userBtn {
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+}
+
+.userBtn:hover {
+  filter: brightness(90%);
+}
+
+nav {
+  width: 428px;
+  height: 80px;
+  bottom: 200px;
+  gap: 15px;
+  background-color: #2a3647;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.navLogo {
+  width: 100.03px;
+  height: 121.97px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #cdcdcd;
+  font-size: 14px;
+  font-weight: 400;  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  flex-direction: column;
+  width: 66px;
+  line-height: 16.8px;
+}
+
+.navBar a:clicked{
+  background-color: #091931;
+}
+
+.navBarIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.navLaws {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navLaws > a {
+  color: #a8a8a8;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navLaws > a:hover {
+  cursor: pointer;
+  font-weight: 700;
+  color: rgba(41, 171, 226, 1);
+}
